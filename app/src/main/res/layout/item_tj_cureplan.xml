@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="2dp">
+
+    <TextView
+        android:id="@+id/tv_tj_cureplan_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="《新世界，灵魂的觉醒》"
+        android:textColor="@color/tv_tear"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_tj_cureplan_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="推荐理由" />
+
+            <TextView
+                android:id="@+id/tv_tj_cureplan_time"
+                style="@style/tv_rcm_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

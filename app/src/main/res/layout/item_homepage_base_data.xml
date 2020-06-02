@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_homepage_item_firstpic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/nav_head_bg"
+        >
+
+        <TextView
+            android:id="@+id/tv_homepage_item_clicks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="点击量"
+            android:textColor="@color/black5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:id="@+id/tv_homepage_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="每一天都是新的开始！"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                />
+            <ImageView
+                android:id="@+id/img_homepage_item_more"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_more"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_homepage_item_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2020/02/02"
+            android:textColor="@color/black5"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_compose_blue"
+    tools:context=".Activity.UpdatePswdActivity">
+
+    <LinearLayout
+        style="@style/layout_bottom_menu">
+
+        <Button
+            style="@style/btn_finish_ac"
+            android:layout_margin="10dp"
+            android:onClick="closeActivity" />
+
+        <TextView
+            style="@style/childpage_nav_title"
+            android:gravity="left"
+            android:text="修改密码" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/regist_et_boder"
+            android:id="@+id/et_username"
+            android:hint="手机号" />
+
+        <EditText
+            android:id="@+id/et_pswd"
+            style="@style/regist_et_boder"
+            android:layout_marginTop="20dp"
+            android:hint="密码" />
+
+        <EditText
+            android:id="@+id/et_surepswd"
+            style="@style/regist_et_boder"
+            android:layout_marginTop="20dp"
+            android:hint="确认密码" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_testcode"
+                style="@style/regist_et_boder"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:hint="验证码" />
+
+            <Button
+                android:background="@color/orange3"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="获取验证码"
+                android:onClick="getMsgCode"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:background="@color/orange3"
+        android:id="@+id/bt_regist"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="updatePswd"
+        android:text="确   认   修   改" />
+
+
+</LinearLayout>
