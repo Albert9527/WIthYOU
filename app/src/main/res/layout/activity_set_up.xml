@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_compose_blue"
+    android:orientation="vertical"
+    tools:context=".Activity.SetUpActivity">
+
+    <LinearLayout
+        style="@style/layout_bottom_menu">
+
+        <Button
+            style="@style/btn_finish_ac"
+            android:layout_margin="10dp"
+            android:onClick="closeActivity" />
+
+        <TextView
+            style="@style/childpage_nav_title"
+            android:text="设置" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#70ffffff"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_setup_acount"
+                style="@style/tv_setup"
+                android:text="账号资料"
+               />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black5" />
+
+            <TextView
+                style="@style/tv_setup"
+                android:text="安全隐私"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#70ffffff"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/tv_setup"
+                android:text="动态设置"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black5" />
+
+            <TextView
+                style="@style/tv_setup"
+                android:text="消息设置"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50000000" />
+
+            <TextView
+                style="@style/tv_setup"
+                android:text="安全隐私"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black5" />
+
+            <TextView
+                style="@style/tv_setup"
+                android:text="安全隐私"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#70ffffff"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/tv_setup"
+                android:text="帮助"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black5" />
+
+            <TextView
+                style="@style/tv_setup"
+                android:text="用户协议"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50000000" />
+
+            <TextView
+                style="@style/tv_setup"
+                android:text="隐私政策"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black5" />
+
+            <TextView
+                style="@style/tv_setup"
+                android:text="隐私权限设置"
+                 />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setup_btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:background="@color/black5"
+        android:onClick="logout"
+        android:text="退出登陆"
+        android:textSize="20sp" />
+
+</LinearLayout>

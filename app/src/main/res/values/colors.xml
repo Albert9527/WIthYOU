@@ -3,4 +3,32 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="viewboder">#1F1F1F</color>
+    <color name="tv_tear">#5DCACA</color>
+
+    <color name="recommendTag">#F2B967</color>
+
+    <!--顶部导航栏 选中/未选中 颜色-->
+    <color name="tab_color">#E34721</color>
+    <color name="black">#191818</color>
+
+    <!--字体浅色-->
+    <color name="black5">#50191818</color>
+
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <color name="white5">#e6e6e6</color>
+
+    <!--淡黄色-->
+    <color name="yellow5">#F5DCB2</color>
+
+    <!--淡橙色-->
+    <color name="orange7">#EE5C42</color>
+    <color name="orange3">#50F0C38B</color>
+
+    <!--淡蓝色-->
+    <color name="blue3">#E1FFEF</color>
+
+
 </resources>

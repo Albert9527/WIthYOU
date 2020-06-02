@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.active.ActiveDetailsActivity">
+
+    <LinearLayout
+        style="@style/layout_bottom_menu">
+
+        <Button
+            style="@style/btn_finish_ac"
+            android:layout_margin="10dp"
+            android:onClick="closeActivity" />
+
+        <TextView
+            style="@style/childpage_nav_title"
+            android:text="活动详情" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_active_details_firstpic"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/cat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_active_details_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:maxLines="2"
+                    android:text="活动名称"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="组织者:" />
+
+                    <TextView
+                        android:id="@+id/tv_active_details_organizer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Albert" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="审核员:" />
+
+                    <TextView
+                        android:id="@+id/tv_active_details_auditor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="规模:" />
+
+                    <TextView
+                        android:id="@+id/tv_active_details_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30人" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="举办时长:" />
+
+                    <TextView
+                        android:id="@+id/tv_active_details_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2h" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="举办时间:" />
+
+                    <TextView
+                        android:id="@+id/tv_active_details_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2020-04-11 13:00" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/icon_more" />
+
+            <TextView
+                android:id="@+id/tv_active_details_address"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:text="翻斗街翻斗花园一号楼"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="活动介绍"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_active_details_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_boder"
+                android:lineSpacingExtra="3dp"
+                android:minLines="3"
+                android:padding="5dp"
+                android:text="活动介绍"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="活动标签"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_active_details_btntag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white5"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btn_active_details_contact"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_compose_blue"
+            android:text="联系我们"
+            android:textSize="20sp"
+            android:onClick="ContactAndApply"/>
+
+        <Button
+            android:id="@+id/btn_active_details_apply"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_compose_blue"
+            android:text="申请加入"
+            android:textSize="20sp"
+            android:onClick="ContactAndApply"/>
+
+    </LinearLayout>
+
+</LinearLayout>

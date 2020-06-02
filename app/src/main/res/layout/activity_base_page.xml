@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.BasePageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/snavbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=">"
+                    android:textSize="30sp" />
+
+                <com.liji.circleimageview.CircleImageView
+                    android:id="@+id/img_usertx"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="3dp"
+                    android:src="@drawable/cat" />
+            </LinearLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:padding="5dp"
+               android:gravity="center"
+               />
+
+
+            <TextView
+                android:id="@+id/tv_homepage_title"
+                android:layout_width="93dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:onClick="TopNavbar"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/img_homepage_msg"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:onClick="IconListener"
+                    android:src="@drawable/msg_off"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img_homepage_add_active"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:onClick="IconListener"
+                    android:src="@drawable/add_active"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_homepage_add_dynmic"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:onClick="IconListener"
+                    android:src="@drawable/add_dynamic"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/img_homepage_check_apply"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:onClick="IconListener"
+                    android:src="@drawable/icon_more"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:itemIconTint="@drawable/home_color_shape"
+            app:itemTextColor="@drawable/home_color_shape"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_head"
+        app:menu="@menu/nav_menu"
+
+        >
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

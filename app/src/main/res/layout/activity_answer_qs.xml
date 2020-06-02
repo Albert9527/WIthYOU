@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AnswerQsActivity">
+
+    <LinearLayout
+        style="@style/layout_bottom_menu">
+
+        <Button
+            style="@style/btn_finish_ac"
+            android:layout_margin="10dp"
+            android:onClick="closeActivity" />
+
+        <TextView
+            style="@style/childpage_nav_title"
+            android:text="xxxx自测量表" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="xxx抑郁程度自测表"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《活动组织安全责任承诺书》"
+                android:textColor="#6C9AEA"
+                android:layout_margin="5dp"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_answer_qs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_answer_qs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <Button
+            android:id="@+id/btn_answer_suretest"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_compose_blue"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="查看结果"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/viewboder" />
+
+    <TextView
+        android:id="@+id/tv_tj_book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="《新世界，灵魂的觉醒》"
+        android:textColor="@color/tv_tear"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/viewboder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_tj_book_firstpic"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/cat" />
+
+            <TextView
+                android:id="@+id/tv_tj_book_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="推荐理由" />
+
+            <TextView
+                android:id="@+id/tv_tj_book_time"
+                style="@style/tv_rcm_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_menu_myapply"
+        android:icon="@drawable/icon_myapply"
+        android:title="活动申请记录" />
+    <item
+        android:id="@+id/collection"
+        android:icon="@drawable/icon_collect"
+        android:title="我的收藏" />
+
+    <item
+        android:id="@+id/create_center"
+        android:icon="@drawable/icon_create"
+        android:title="创作中心" />
+
+    <item
+        android:id="@+id/volunteer"
+        android:icon="@drawable/icon_volunteer"
+        android:title="志愿者中心" />
+    <item
+        android:id="@+id/join_our"
+        android:icon="@drawable/icon_joinus"
+        android:title="加入我们" />
+    <item
+        android:id="@+id/customer_service"
+        android:icon="@drawable/icon_cs"
+        android:title="联系客服" />
+    <item
+        android:id="@+id/set_Up"
+        android:icon="@drawable/icon_setup"
+        android:title="设置" />
+
+
+</menu>

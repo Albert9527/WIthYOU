@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_recommend"
+    tools:context=".Fragments.RecommendFragment">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="search..."
+            android:background="@drawable/et_boder"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="书籍"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/recommendTag"/>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="电影"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/et_boder"/>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="音乐"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/et_boder"/>
+              </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="游戏"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/et_boder"/>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="动漫"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/et_boder"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="自疗方案"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/et_boder"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000"
+                />
+
+        </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/recommend_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

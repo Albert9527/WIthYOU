@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="5dp">
+
+    <com.liji.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/cat"
+        android:id="@+id/circleImg_praise_userpic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_praise_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLines="2"
+            android:text="NickName1、NickName2 等总计10人
+赞了我的评论"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_praise_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="2020-03-11" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_praise_target"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="原评论的最上级评论"
+        android:textSize="12sp" />
+</LinearLayout>

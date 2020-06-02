@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="5dp">
+
+    <com.liji.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:src="@drawable/cat"
+        android:id="@+id/circleImg_item_msg_userpic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_item_msg_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="nickname"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_msg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="2020/04/05"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_item_msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:minLines="2"
+            android:padding="3dp"
+            android:text="消息内容 > > > > >>>>>>>"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

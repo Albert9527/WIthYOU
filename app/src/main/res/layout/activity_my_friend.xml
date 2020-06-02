@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MyFriendActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout_bottom_menu">
+
+        <Button
+            style="@style/btn_finish_ac"
+            android:layout_margin="10dp"
+            android:onClick="closeActivity" />
+
+        <TextView
+            style="@style/childpage_nav_title"
+            android:text="我的好友" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_myfriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/tab_color"
+        app:tabSelectedTextColor="@color/tab_color"
+        app:tabTextColor="@color/black"
+        app:tabGravity="fill"
+        app:tabTextAppearance="@style/tab_text15sp"
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/tab_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>

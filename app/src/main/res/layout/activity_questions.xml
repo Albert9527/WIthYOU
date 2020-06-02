@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.QuestionsActivity">
+
+    <LinearLayout
+        style="@style/layout_bottom_menu">
+
+        <Button
+            style="@style/btn_finish_ac"
+            android:layout_margin="10dp"
+            android:onClick="closeActivity" />
+
+        <TextView
+            style="@style/childpage_nav_title"
+            android:text="抑郁自测题集" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/lyout_search">
+
+        <EditText
+            android:id="@+id/et_search_qsbank"
+            style="@style/et_search"/>
+
+        <ImageView
+            android:id="@+id/img_search_qsbank"
+            style="@style/icon_search" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/refresh_questions">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview_questions"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

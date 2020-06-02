@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_compose_blue"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginActivity">
+
+    <LinearLayout style="@style/layout_bottom_menu">
+
+        <Button
+            style="@style/btn_finish_ac"
+            android:layout_margin="10dp"
+            android:onClick="closeActivity" />
+
+        <TextView
+            style="@style/childpage_nav_title"
+            android:text="登陆" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:src="@drawable/icon_logo"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#40EDEDED"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ly_boder"
+                android:hint="用户名/账号/邮箱"
+                android:padding="5dp"
+                android:textColor="#8B8386" />
+
+            <EditText
+                android:id="@+id/et_pswd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ly_boder"
+                android:hint="密码"
+                android:maxLength="16"
+                android:padding="5dp"
+                android:textColor="#8B8386" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:onClick="updatePswd"
+                android:text="忘记密码?"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/orange3"
+            android:onClick="login"
+            android:text="登          录" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/orange3"
+            android:text="注    册   >" />
+
+    </LinearLayout>
+</LinearLayout>

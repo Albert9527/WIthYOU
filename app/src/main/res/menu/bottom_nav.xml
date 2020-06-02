@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_homepage"
+        android:icon="@drawable/homepage_shape"
+        android:title="推荐"
+        android:tooltipText="drr" />
+
+    <item
+        android:id="@+id/navigation_active"
+        android:icon="@drawable/active_shape"
+        android:title="活动" />
+
+    <item
+        android:id="@+id/navigation_tools"
+        android:icon="@drawable/tools_shape"
+        android:title="工具" />
+
+    <item
+        android:id="@+id/navigation_dynamic"
+        android:icon="@drawable/dynamic_shape"
+        android:title="动态" />
+
+</menu>

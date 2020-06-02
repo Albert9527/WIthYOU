@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/refresh_testing"
+    tools:context=".Fragments.ToolsFragment"
+    android:orientation="vertical"
+    android:background="#50FDD8BD"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btn_tools_testBySelf"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:text="抑郁程度自测"
+            android:background="@drawable/bg_compose_blue"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:text="在线心理咨询辅导"
+            android:background="@drawable/bg_compose_blue"/>
+    </LinearLayout>
+
+
+</LinearLayout>

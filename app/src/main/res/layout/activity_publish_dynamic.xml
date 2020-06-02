@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50E6CEAC"
+    android:orientation="vertical"
+    tools:context=".Activity.PublishDynamicActivity">
+
+    <LinearLayout
+        style="@style/layout_bottom_menu">
+
+        <Button
+            style="@style/btn_finish_ac"
+            android:layout_margin="10dp"
+            android:onClick="closeActivity" />
+
+        <TextView
+            style="@style/childpage_nav_title"
+            android:text="新增动态" />
+
+        <Button
+            android:id="@+id/btn_dynmic_send"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="发布"
+            android:padding="5dp"
+            android:onClick="addDynamic"
+            android:layout_margin="5dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_dynamic_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="输入内容。。。"
+            android:maxLines="8"
+            android:minLines="6"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:background="@drawable/ly_boder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="添加图片"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img_dynmic_add1"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:visibility="gone"
+                android:onClick="imgviewclick"/>
+
+            <ImageView
+                android:id="@+id/img_dynmic__add2"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:visibility="gone"
+                android:onClick="imgviewclick"/>
+
+            <ImageView
+                android:id="@+id/img_dynmic__add3"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:visibility="gone"
+                android:onClick="imgviewclick"/>
+            <Button
+                android:id="@+id/btn_dynmic_addimg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:text="十"
+                android:onClick="addDynamic"
+                android:textSize="50sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/icon_more"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/icon_more"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_more"/>
+    </LinearLayout>
+
+</LinearLayout>

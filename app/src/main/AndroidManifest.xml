@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zcz1024.withyou">
-
-    <!--添加网络权限-->
+    <!-- 添加网络权限 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!--读写内存和相机使用权限-->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 读写内存和相机使用权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -16,14 +13,40 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Activity.MainActivity">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.recommend.CurePlanRcmActivity"></activity>
+        <activity android:name=".Activity.recommend.VideosRcmActivity" />
+        <activity android:name=".Activity.recommend.MusicRcmActivity" />
+        <activity android:name=".Activity.recommend.BookRcmActivity" />
+        <activity android:name=".Activity.active.MyActiveDetilsActivity" />
+        <activity android:name=".Activity.QuestionDetailsActivity" />
+        <activity android:name=".Activity.TestResultActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.AnswerQsActivity" />
+        <activity android:name=".Activity.QuestionsActivity" />
+        <activity android:name=".Activity.My_MainPageActivity" />
+        <activity android:name=".Activity.active.ActiveDetailsActivity" />
+        <activity android:name=".Activity.active.ActiveApplyCheckActivity" />
+        <activity android:name=".Activity.active.ActiveAddActitvity" />
+        <activity android:name=".Activity.AcountInfoActivity" />
+        <activity android:name=".Activity.SetUpActivity" />
+        <activity android:name=".Activity.ReceivedPraiseActivity" />
+        <activity android:name=".Activity.ReplyMeActivity" />
+        <activity android:name=".Activity.NewsActivity" />
+        <activity android:name=".Activity.MyFriendActivity" />
+        <activity android:name=".Activity.PublishDynamicActivity" />
+        <activity android:name=".Activity.VolunteerApplyActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.UpdatePswdActivity" />
+        <activity android:name=".Activity.BasePageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.MainActivity" />
     </application>
 
 </manifest>
